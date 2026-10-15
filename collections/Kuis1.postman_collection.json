@@ -1,0 +1,524 @@
+{
+  "info": {
+    "_postman_id": "dbe3c9a7-18dc-424d-9224-bca8e5a97442",
+    "name": "PAW2",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "55686314"
+  },
+  "item": [
+    {
+      "name": "Fakultas",
+      "item": [
+        {
+          "name": "List Fakultas",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": ""
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create Fakultas",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"nama\" : \"FS&T\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BASE_URL}}/fakultas",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "fakultas"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Show Fkultas",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": ""
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Fakultas",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": ""
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Fakultas",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": ""
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Prodi",
+      "item": [
+        {
+          "name": "Create Prodi",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": ""
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{BASE_URL}}/prodi",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "prodi"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Kuis 1",
+      "item": [
+        {
+          "name": "Paket",
+          "item": [
+            {
+              "name": "Create Paket",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"nomor_resi\" : \"R0001\",\r\n    \"nama_paket\" : \"Keripik Pisang Yen-Yen Khas Lampung\",\r\n    \"keterangan_paket\" : \"2 original, 2 rasa coklat, 1 rasa kopi, 1 rasa durian\",\r\n    \"nama_pengirim\" : \"Yanto\",\r\n    \"nama_penerima\" : \"Jonathan\",\r\n    \"berat_kg\" : 12\r\n}\r\n",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{BASE_URL}}/api/paket_create_paket",
+                  "host": [
+                    "{{BASE_URL}}"
+                  ],
+                  "path": [
+                    "api",
+                    "paket_create_paket"
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "Validasi Create Paket",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\r\n    \"nomor_resi\" : \" \",\r\n    \"nama_paket\" : \" \",\r\n    \"keterangan_paket\" : \" \",\r\n    \"nama_pengirim\" : \" \",\r\n    \"nama_penerima\" : \" \",\r\n    \"berat_kg\" : \" \"\r\n}\r\n",
+                      "options": {
+                        "raw": {
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "{{BASE_URL}}/api/paket_create_paket",
+                      "host": [
+                        "{{BASE_URL}}"
+                      ],
+                      "path": [
+                        "api",
+                        "paket_create_paket"
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "text",
+                  "header": null,
+                  "cookie": [],
+                  "body": ""
+                },
+                {
+                  "name": "Create Paket",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\r\n    \"nomor_resi\" : \"R0001\",\r\n    \"nama_paket\" : \"Keripik Pisang Yen-Yen Khas Lampung\",\r\n    \"keterangan_paket\" : \"2 original, 2 rasa coklat, 1 rasa kopi, 1 rasa durian\",\r\n    \"nama_pengirim\" : \"Yanto\",\r\n    \"nama_penerima\" : \"Jonathan\",\r\n    \"berat_kg\" : 12\r\n}\r\n",
+                      "options": {
+                        "raw": {
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "{{BASE_URL}}/api/paket_create_paket",
+                      "host": [
+                        "{{BASE_URL}}"
+                      ],
+                      "path": [
+                        "api",
+                        "paket_create_paket"
+                      ]
+                    }
+                  },
+                  "_postman_previewlanguage": "json",
+                  "header": null,
+                  "cookie": [],
+                  "body": ""
+                }
+              ]
+            },
+            {
+              "name": "List Paket",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{BASE_URL}}/apipaket_list_paket",
+                  "host": [
+                    "{{BASE_URL}}"
+                  ],
+                  "path": [
+                    "apipaket_list_paket"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Update Paket",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"nomor_resi\" : \"R0002\",\r\n    \"nama_paket\" : \"Gantungan Kunci Khas Belitung\",\r\n    \"keterangan_paket\" : \"Terbuat dari kerang, dengan tulisan Belitung\",\r\n    \"nama_pengirim\" : \"Yanto\",\r\n    \"nama_penerima\" : \"Vanessa\",\r\n    \"berat_kg\" : 0.5\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{BASE_URL}}/api/paket_update_paket",
+                  "host": [
+                    "{{BASE_URL}}"
+                  ],
+                  "path": [
+                    "api",
+                    "paket_update_paket"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Delete Paket",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{BASE_URL}}/api/paket_delete_paket",
+                  "host": [
+                    "{{BASE_URL}}"
+                  ],
+                  "path": [
+                    "api",
+                    "paket_delete_paket"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Detail Paket",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{BASE_URL}}/paket_detail_paket",
+                  "host": [
+                    "{{BASE_URL}}"
+                  ],
+                  "path": [
+                    "paket_detail_paket"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Validasi Create Paket",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"nomor_resi\" : \" \",\r\n    \"nama_paket\" : \" \",\r\n    \"keterangan_paket\" : \" \",\r\n    \"nama_pengirim\" : \" \",\r\n    \"nama_penerima\" : \" \",\r\n    \"berat_kg\" : \" \"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{BASE_URL}}/paket_create_paket",
+                  "host": [
+                    "{{BASE_URL}}"
+                  ],
+                  "path": [
+                    "paket_create_paket"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Validasi Detail Paket",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": ""
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Test Middleware",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": ""
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Penerima",
+          "item": [
+            {
+              "name": "Create Penerima",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"kode_penerima\" : \"P00001\",\r\n    \"nama_penerima\" : \"Jonathan\",\r\n    \"nomor_resi\" : \"R0001\",\r\n    \"nama_paket\" : \"Keripik Pisang Yen-Yen Khas Lampung\",\r\n    \"nama_pengirim\" : \"Yanto\",\r\n    \"berat_kg\" : 12\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{BASE_URL}}/penerima_create_penerima",
+                  "host": [
+                    "{{BASE_URL}}"
+                  ],
+                  "path": [
+                    "penerima_create_penerima"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "List Penerima",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{BASE_URL}}/penerima_list_penerima",
+                  "host": [
+                    "{{BASE_URL}}"
+                  ],
+                  "path": [
+                    "penerima_list_penerima"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "List Penerima",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{BASE_URL}}/penerima_list_penerima",
+                  "host": [
+                    "{{BASE_URL}}"
+                  ],
+                  "path": [
+                    "penerima_list_penerima"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Detail Penerima",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{   \r\n    \"nomor_penerima\" : \"P0001\",\r\n    \"nama_penerima\" : \"Jonathan\",\r\n    \"nomor_resi\": \"R0001\",\r\n    \"nama_paket\" : \"Keripik Pisang Yen-Yen Khas Lampung\",\r\n    \"keterangan_paket\" : \"2 original, 2 rasa coklat, 1 rasa kopi, 1 rasa durian\",\r\n    \"nama_pengirim\" : \"Yanto\",\r\n    \"berat_kg\" : 12,\r\n    \"paket_id\" : \"6a0000100002\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{BASE_URL}}/penerima_detail_penerima",
+                  "host": [
+                    "{{BASE_URL}}"
+                  ],
+                  "path": [
+                    "penerima_detail_penerima"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Update Penerima",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"nomor_penerima\" : \"P0002\",\r\n    \"nama_penerima\" : \"Vanessa\",\r\n    \"nama_paket\" : \"Gantungan Kunci Khas Belitung\",\r\n    \"keterangan_paket\" : \"Terbuat dari kerang, dengan tulisan Belitung\",\r\n    \"nama_pengirim\" : \"Yanto\",\r\n    \"berat_kg\" : 0.5,\r\n    \"paket_id\" : \"6a00002b0003\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{BASE_URL}}/penerima_update_penerima",
+                  "host": [
+                    "{{BASE_URL}}"
+                  ],
+                  "path": [
+                    "penerima_update_penerima"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Delete Penerima",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "{{BASE_URL}}/penerima_delete_penerima",
+                  "host": [
+                    "{{BASE_URL}}"
+                  ],
+                  "path": [
+                    "penerima_delete_penerima"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
